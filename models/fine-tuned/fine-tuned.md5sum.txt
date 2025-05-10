@@ -1,0 +1,9 @@
+32597f132e67e16b4999e415493690e6  DeepCOI-Annelida.pt
+bd6b8c5f39b35fdd0ba6fbfc34025a8a  DeepCOI-Arthropoda.pt
+21239ad18808ab144aeec57157e093c3  DeepCOI-Chordata.pt
+01153a1a25b75dc13f161214369579b5  DeepCOI-Cnidaria.pt
+58a6e04d1cebadf5dfb3c5999cee6f1e  DeepCOI-Echinodermata.pt
+542b499422b8e26548d786f9adfc7733  DeepCOI-Mollusca.pt
+33d9f4c9202452acbe44f4f3c496264d  DeepCOI-Nematoda.pt
+c30025beec5501b416099101b562da84  DeepCOI-phylum.pt
+916a4c90bc374043236c50918c25a999  DeepCOI-Platyhelminthes.pt
