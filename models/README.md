@@ -26,6 +26,6 @@ The pre-trained/fine-tuned models could be downloaded through the links as follo
 or using `download_models.py` script in this directory.
 
 ```
-chmod u+x ./gdown.sh
+conda install gdown [optional]
 python ./download_models.py -d all -o ./
 ```

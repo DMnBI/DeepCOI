@@ -93,11 +93,7 @@ def main(argv = sys.argv[1:]):
 		md5sum = FILEID_MAP[model]["MD5SUM"]
 
 		# Download from Google Drive
-		cmd = ["./gdown.sh", file_id, f"{args.o_dir}/DeepCOI-{model}.pt"]
-		_ = sp.run(cmd)
-
-		# Remove cookies
-		cmd = ["rm", "-rf", "./cookies.txt"]
+		cnd = ['gdown', '-O', f"{args.o_dir}/DeepCOI-{model}.pt", file_id]
 		_ = sp.run(cmd)
 
 		# Get md5sum

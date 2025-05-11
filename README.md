@@ -22,6 +22,7 @@ We strongly recommend you to use python virtual environment with [Anaconda](http
 * torchinfo 1.7.2
 * tqdm 4.64.1
 * scipy 1.7.3
+* gdown (for downloading models in command-line)
 
 
 Please adjust per_device_batch_size and gradient_accumulation_steps according to the specifications of the machine you are using.
@@ -50,7 +51,7 @@ The source files and useful scripts are in this repository. The pre-trained and 
 Please download the model you need through the link below and save them in the `models` directory. You can also download models using the download_models.py script in the scripts directory.
 
 ```
-chmod u+x models/gdown.sh
+conda install gdown [optional]
 python models/download_models.py -d all -o ./models
 ```
 
