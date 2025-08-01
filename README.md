@@ -46,34 +46,12 @@ Please make sure all the required programs are successfully installed
 
 ### 1.2 Download pre-trained/fine-tuned models
 
-The source files and useful scripts are in this repository. The pre-trained and fine-tuned models have been uploaded on **Google Drive** since the size of some models is larger than 100MB. PLEASE make sure to download models after cloning this repository.
+The source files and useful scripts are in this repository. The pre-trained and fine-tuned models have been uploaded on **Zenodo** since the size of some models is larger than 100MB. PLEASE make sure to download models after cloning this repository.
 
-Please download the model you need through the link below and save them in the `models` directory. You can also download models using the download_models.py script in the scripts directory.
+Please download the model you need through the link below and save them in the `models` directory.  
 
-```
-conda install gdown [optional]
-python models/download_models.py -d all -o ./models
-```
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16660862.svg)](https://doi.org/10.5281/zenodo.16660862)
 
-**Pre-trained model**
-
-* [DeepCOI-t6-320](https://drive.google.com/file/d/1nIlli1OLAQUdsO-faK__ou-bmwQZYk8s/view?usp=sharing)
-* [DeepCOI-t12-480](https://drive.google.com/file/d/1yIInuQHOY-eK5mJPsmcnB-h5uDmaulPt/view?usp=sharing)
-
-**Phylum-level classifier**
-
-* [DeepCOI-phylum](https://drive.google.com/file/d/1OniD3g_mWNeQSsov42cjGMQJS3iGFgYg/view?usp=sharing)
-
-**Class-to-species classifiers**
-
-* [DeepCOI-Annelida](https://drive.google.com/file/d/1wQs2Z9KyL-o7UmcxA51knmES_8WCRXA1/view?usp=sharing)
-* [DeepCOI-Arthropoda](https://drive.google.com/file/d/1v3d790mOrguKumEYOAg4_4TjmBubnbzb/view?usp=sharing)
-* [DeepCOI-Chordata](https://drive.google.com/file/d/1REk2R4cmIZnMsqtykyU0Ej2ws57kpFvz/view?usp=sharing)
-* [DeepCOI-Cnidaria](https://drive.google.com/file/d/1lh_oi99UIqCg6JSMSQw-ED0qTlZvZE5z/view?usp=sharing)
-* [DeepCOI-Echinodermata](https://drive.google.com/file/d/1Rub95cNkoTSx2KfvwpA7btcpVXQ3gnMN/view?usp=sharing)
-* [DeepCOI-Mollusca](https://drive.google.com/file/d/1J37pfJSXrhmP0p1I1s52WvWJRWuyGxVj/view?usp=sharing)
-* [DeepCOI-Nematoda](https://drive.google.com/file/d/1fnNu6wZHaQ78O2PiTQI17KzVOtiBppig/view?usp=sharing)
-* [DeepCOI-Platyhelminthes](https://drive.google.com/file/d/1DKwJidN7NeOOaCunoiScj25KFtZ1tCSh/view?usp=sharing)
 
 ### 1.3 Allow executable permissions
 
@@ -256,36 +234,6 @@ src/split_data.py \
     -o ./DS-PBBC/phylum/ \
     -c 0.9 \
     -t Arthropoda
-```
-
-### 3.3 models/download_models.py
-
-Pre-trained/Fine-tuned models were uploaded on Google Drive. You can download those models through not only the above links but given python script. 
-
-**USAGE**
-
-```
-download_models.py \
-    -d all \
-    -o models
-```
-Using the above command, all pre-trained/fine-tuned models will be downloaded in the `models` directory. You can give relative path of the target directory through `-o` option. Moreover, You can download specific model(s) instead of downloading all models.
-
-```
-# Download only Arthropoda and Chordata models
-download_models.py \
-    -d Arthropoda Chordata \
-    -o models
-    
-# Download all pre-trained models
-download_models.py \
-	-d pre-trained \
-	-o models/pre-trained
-	
-# Download all fine-tuned models
-download_models.py \
-	-d fine-tuned \
-	-o models/fine-tuned
 ```
 
 
