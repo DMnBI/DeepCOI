@@ -22,7 +22,6 @@ We strongly recommend you to use python virtual environment with [Anaconda](http
 * torchinfo 1.7.2
 * tqdm 4.64.1
 * scipy 1.7.3
-* gdown (for downloading models in command-line)
 
 
 Please adjust per_device_batch_size and gradient_accumulation_steps according to the specifications of the machine you are using.
